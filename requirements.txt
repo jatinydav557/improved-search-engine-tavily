@@ -1,0 +1,19 @@
+streamlit
+python-dotenv
+
+# LangChain core and integrations
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-openai
+langchain-text-splitters
+
+# Search & data tools
+tavily-python
+arxiv
+wikipedia
+
+# For embedding models if needed
+sentence-transformers
+huggingface_hub
