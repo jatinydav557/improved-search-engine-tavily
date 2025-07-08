@@ -1,181 +1,177 @@
-Perfect! This project highlights your **practical upgrade** from a DuckDuckGo-based chatbot to a **smarter, cleaner, and more stable real-time search agent using Tavily**, which is a fantastic improvement to showcase in your portfolio.
-
-Here’s a **longer, more thoughtful `README.md`** that emphasizes usefulness, your thought process, and what you actually learned while building it:
-
----
-
-````markdown
+▶️ YouTube Demo: [Watch Here](https://www.youtube.com/watch?v=G18bM5At4F0&ab_channel=Jatin)  
 # 🔍 AI Web Assistant with LangChain + Tavily + Groq
 
-This project is an **improved web search chatbot** built using:
+This project is an **improved real-time search chatbot** built using:
 
 - 🧠 [LangChain](https://www.langchain.com/)
 - ⚡ [Groq’s LLaMA3-70B](https://groq.com/)
 - 🔎 [Tavily Search](https://www.tavily.com/)
-- 📚 Wikipedia + Arxiv Research Access
-- 🧵 [Streamlit](https://streamlit.io/) for real-time chat UI
+- 📚 Wikipedia + Arxiv for research
+- 🧵 [Streamlit](https://streamlit.io/) for the user interface
 
-> ✅ **Project Name:** Improved Search with Tavily
+> ✅ **Project Title:** Real-Time Web Search Chatbot with Tavily, LangChain & Groq
 
 ---
 
 ## 🚀 Why I Built This
 
-After building a working chatbot using DuckDuckGo and Groq LLM, I started noticing **rate limits**, **irrelevant results**, and the lack of **structured citations**.  
-To solve this, I explored **Tavily Search API**, which gives rich and focused web results, and integrated it with **LangChain tools**.
+After building a DuckDuckGo-powered chatbot, I faced issues like:
+- 🌐 Irrelevant or generic results
+- ⛔ Rate limits
+- 🧵 Lack of citations or structured context
 
-This new version:
-- Is **cleaner**, more **reliable**, and **faster**
-- Leverages **Wikipedia**, **Arxiv**, and **Tavily** to cover both casual + academic search use cases
-- Supports **real-time web browsing** with controlled tool execution
-
----
-
-## ✨ Highlights
-
-- 🔎 Web-wide semantic search via **Tavily**
-- 📚 Research-backed results from **Arxiv + Wikipedia**
-- 🤖 Large-scale inference with **Groq LLaMA3-70B**
-- 🧠 Smart LangChain **AgentType.ZERO_SHOT_REACT_DESCRIPTION** logic
-- ⚙️ API-key protected & safe for live deployments
-- 💬 Simple & fast **chat interface using Streamlit**
+So I upgraded to **Tavily**, a focused web search API built for LLMs — delivering better and more relevant results.  
+Now paired with **Groq's ultra-fast LLaMA3-70B**, the chatbot gives structured, smart, and fast answers.
 
 ---
 
-## 🧩 Project Structure
+## ✨ Key Features
 
-```bash
-.
-├── app.py             # Main Streamlit chatbot app
-├── .env               # Stores Groq + Tavily API keys
-├── requirements.txt   # Python dependencies
-└── README.md          # You're reading it
-````
-
----
-
-## ⚙️ Setup & Installation
-
-### 1️⃣ Clone This Repo
-
-```bash
-git clone https://github.com/yourusername/langchain-tavily-agent.git
-cd langchain-tavily-agent
-```
-
-### 2️⃣ Create & Activate Virtual Environment
-
-```bash
-uv venv venv
-source venv/bin/activate  # or venv\Scripts\activate (Windows)
-```
-
-### 3️⃣ Install All Dependencies
-
-```bash
-uv pip install -r requirements.txt
-# or
-pip install -r requirements.txt
-```
-
-### 4️⃣ Create a `.env` File
-
-```env
-TAVILY_API_KEY=your_tavily_api_key
-GROQ_API_KEY=your_groq_api_key
-```
+- 🔎 Real-time web search with **Tavily**
+- 📚 Scientific and factual grounding using **Wikipedia** + **Arxiv**
+- ⚡ Powered by **Groq LLaMA3-70B** for blazing-fast reasoning
+- 🧠 LangChain **Agent** logic for tool-based responses
+- 🖥️ Clean chat interface using **Streamlit**
+- 🛡️ All keys managed securely using `.env`
 
 ---
 
 ## 🧠 How It Works
 
-1. You enter a query like *"What is the latest in generative AI?"*
-2. The LangChain agent determines which tools to use (Tavily, Wiki, or Arxiv)
-3. Each tool is used only **once per query** for efficiency
-4. Groq’s LLM synthesizes the gathered context and gives a final answer
-5. You get a precise, structured, and human-readable response.
+1. User enters a prompt → “Latest updates on AI agents”
+2. LangChain Agent chooses which tools to call:
+   - Tavily → Web search
+   - Wikipedia → Definitions
+   - Arxiv → Scientific papers
+3. Groq’s LLaMA3-70B processes all returned context
+4. Final answer is generated and shown in a nice UI
 
 ---
 
 ## 💬 Example Prompts
 
-* “Give me recent news on self-supervised learning”
-* “Who invented self-attention?”
-* “Find a research paper about LLMs and diffusion models”
-* “Explain retrieval-augmented generation using Wikipedia”
+- “Give me recent news on generative AI”
+- “Who proposed the transformer architecture?”
+- “Find a research paper on vision-language models”
+- “Explain what RAG is using Wikipedia”
 
 ---
 
-## 📦 Requirements
+## 📁 Project Structure
+
+```bash
+.
+├── app.py               # Streamlit-based chatbot app
+├── .env                 # API keys (Tavily + Groq)
+├── requirements.txt     # All Python dependencies
+└── README.md            # Project documentation
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/jatinydav557/improved-search-engine-tavily.git
+cd improved-search-engine-tavily
+```
+
+### 2️⃣ Create a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Add `.env` File
+
+```env
+TAVILY_API_KEY=your_tavily_key
+GROQ_API_KEY=your_groq_key
+```
+
+---
+
+## ▶️ Run the App
+
+```bash
+streamlit run app.py
+```
+
+Then visit: [http://localhost:8501](http://localhost:8501)
+
+---
+
+## 📦 Dependencies
 
 ```txt
 streamlit
 python-dotenv
 
-# LangChain core
+# LangChain core + integrations
 langchain
 langchain-core
 langchain-community
-langchain-groq
 langchain-openai
+langchain-groq
 langchain-text-splitters
 
-# Search & knowledge tools
+# Tool APIs
 tavily-python
 arxiv
 wikipedia
 
-# Optional embedding models
+# Optional: Embeddings + HF hub
 sentence-transformers
 huggingface_hub
 ```
 
 ---
 
-## 📺 Demo Preview
+## 🙋‍♂️ About Me
 
-You can watch a short walkthrough here (replace with your own video):
+Hi, I’m **Jatin**, a final-year **MCA student** passionate about building real-world AI tools with:
+- 🔍 LLM Agents
+- 🧠 Retrieval-Augmented Generation (RAG)
+- ⚙️ MLOps & GenAI Apps
 
-📹 [Watch YouTube Demo](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+I've built 20+ GenAI projects — each helping me get closer to my dream role in applied AI and product-driven AI engineering.
 
----
-
-## 🎓 About Me
-
-I'm currently an **MCA final-year student**, working on mastering AI tooling and GenAI systems.
-This project was a breakthrough moment — it was the first time I realized how **agents can reason**, **choose tools**, and **retrieve real-time knowledge** without needing fine-tuning.
-
-I'm actively working on building 20+ such projects covering:
-
-* 🔍 Real-world Search Agents
-* 🧠 RAG Applications
-* ⚙️ MLOps Deployment
-* 🤖 LLM-powered Tools
-
-📌 Open to roles in: AI Engineering • RAG Systems • Search • LangChain + MLOps
-🔗 [LinkedIn](https://www.linkedin.com/in/yourname)
-🌐 [Portfolio](https://yourwebsite.com)
+📌 Actively looking for:
+- 🤖 LLM & RAG Engineering Roles
+- 🧠 NLP / Conversational AI Research
+- ⚙️ AI Tooling / MLOps Roles
 
 ---
 
-## 🧭 Future Upgrades
+## 🌐 Connect With Me
 
-* 🧠 Add memory for session-aware conversations
-* 📑 Attach citations and links for transparency
-* 🛡️ Add rate-limiting handling for Tavily
-* 🌍 Deploy to Hugging Face Spaces or GCP Cloud Run
-
----
-
-⭐ If this project helped you, leave a ⭐ star and feel free to fork or build upon it!
-
-```
+- 🔗 [LinkedIn](https://www.linkedin.com/in/jatin557)
+- 🖥️ [GitHub](https://github.com/jatinydav557)
+- 📧 [jatinydav557@gmail.com](mailto:jatinydav557@gmail.com)
+- 📱 +91-7340386035
+- 🎥 [YouTube Projects](https://www.youtube.com/@jatinML/playlists)
 
 ---
 
-Let me know if you want a **dark banner image** for this project too with text like:
+## 🧭 Roadmap / Improvements
 
-> "🚀 Real-Time Web Assistant with Tavily, Groq & LangChain"
+- [ ] Add multi-turn memory with LangChain `ConversationBufferMemory`
+- [ ] Save chat logs & export to PDF/Markdown
+- [ ] Add fallback to DuckDuckGo or SerpAPI
+- [ ] Deploy on Hugging Face Spaces or GCP Cloud Run
 
-Just send me the name you want on it and I'll generate it!
-```
+---
+
+⭐ If this project helped you, consider giving it a **star** and **fork it** to build your own assistant!
+
+> “I don’t just use AI — I build it.”
+
